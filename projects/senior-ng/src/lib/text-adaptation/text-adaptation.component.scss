@@ -1,0 +1,46 @@
+/* component.css */
+.square-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  padding: 0; /* Remove o padding padrão do botão para manter as dimensões corretas */
+  background-color: #0074AB; /* Use a cor desejada para o fundo do botão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave quando a cor de fundo muda */
+  cursor: pointer;
+}
+
+.square-button:hover {
+  filter: brightness(0.9);
+  // transform: scale(1.2); /* Aumenta a área do botão em 20% quando o mouse está sobre ele */
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.1);
+  // transition: filter 0.5s;
+}
+
+.round-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%; /* ajuste a dimensão conforme necessário */
+  height: 70%; /* ajuste a dimensão conforme necessário */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: end;
+
+  button {
+    margin-left: 1rem;
+  }
+}
+
+.teste {
+  // backdrop-filter: contrast(0.5);
+
+}

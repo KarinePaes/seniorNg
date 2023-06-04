@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SeniorNgModule } from 'seniorNg';
+import { TextAdaptationModule } from 'projects/senior-ng/src/lib/text-adaptation/text-adaptation.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { SeniorNgModule } from 'seniorNg';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SeniorNgModule
+    TextAdaptationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

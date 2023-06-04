@@ -1,0 +1,38 @@
+<!-- <button (click)="increaseFontSize()">Aumentar fonte</button>
+<ng-container [ngTemplateOutlet]="content" [ngTemplateOutletContext]="{ $implicit: fontSize }"></ng-container>
+<ng-template #content let-fontSize>
+  <div [style.font-size.px]="fontSize">
+    <p>Seu texto aqui</p>
+  </div>
+</ng-template> -->
+
+<div>
+  <div [style.font-size.px]="fontSize" [style.line-height.px]="lineHeight"  [style.color]="color" [style.backdrop-filter]="'contrast(' + contrast + ')'" class="teste">
+    <p>Este é um texto genérico destinado a preencher uma área de texto em um website ou documento. Ele pode ser usado
+      como uma amostra de conteúdo ou para fins de teste de formatação. O objetivo deste texto é fornecer informações
+      básicas sobre um tópico genérico e preencher espaço na página. Ele pode ser personalizado ou substituído por
+      conteúdo real relevante para o usuário ou o propósito do documento.</p>
+  </div>
+
+
+  <div class="button-group">
+    <!-- component.html -->
+    <button class="square-button" (click)="increaseFontSize()">
+      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/pngwing.com.png" class="round-logo"
+        alt="Logo">
+    </button>
+    <button class="square-button" (click)="decreaseFontSize()">
+      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/pngwing.com.png" class="round-logo"
+        alt="Logo">
+    </button>
+    <button class="square-button" (click)="increaseLineHeight()">
+      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/pngwing.com.png" class="round-logo"
+        alt="Logo">
+    </button>
+    <button class="square-button" (click)="changeContrast()">
+      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/pngwing.com.png" class="round-logo"
+        alt="Logo">
+    </button>
+
+  </div>
+</div>

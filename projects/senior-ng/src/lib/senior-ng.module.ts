@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ButtonComponent } from './button/button.component';
+import { TextAdaptationModule } from './text-adaptation/text-adaptation.module';
 
 
 
@@ -8,6 +9,7 @@ import { ButtonComponent } from './button/button.component';
     ButtonComponent
   ],
   imports: [
+    TextAdaptationModule
   ],
   exports: [
     ButtonComponent
