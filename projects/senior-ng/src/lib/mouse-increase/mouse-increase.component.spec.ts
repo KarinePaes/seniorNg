@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ButtonComponent } from './button.component';
+import { MouseIncreaseComponent } from './mouse-increase.component';
 
-describe('ButtonComponent', () => {
-  let component: ButtonComponent;
-  let fixture: ComponentFixture<ButtonComponent>;
+describe('MouseIncreaseComponent', () => {
+  let component: MouseIncreaseComponent;
+  let fixture: ComponentFixture<MouseIncreaseComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ButtonComponent ]
+      declarations: [ MouseIncreaseComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ButtonComponent);
+    fixture = TestBed.createComponent(MouseIncreaseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

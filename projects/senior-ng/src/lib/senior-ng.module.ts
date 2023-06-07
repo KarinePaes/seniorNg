@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
-import { ButtonComponent } from './button/button.component';
+import { MouseIncreaseComponent } from './mouse-increase/mouse-increase.component';
 import { MouseIncreaseDirective } from '../directives/mouse-increase.directive';
 
 
 
 @NgModule({
   declarations: [
-    ButtonComponent,
+    MouseIncreaseComponent,
     MouseIncreaseDirective
   ],
   imports: [
   ],
   exports: [
-    ButtonComponent,
+    MouseIncreaseComponent,
     MouseIncreaseDirective
   ]
 })
