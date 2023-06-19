@@ -8,29 +8,26 @@
 
 <div>
   <div [style.font-size.px]="fontSize" [style.line-height.px]="lineHeight"  [style.color]="color" [style.backdrop-filter]="'contrast(' + contrast + ')'" class="teste">
-    <p>Este é um texto genérico destinado a preencher uma área de texto em um website ou documento. Ele pode ser usado
-      como uma amostra de conteúdo ou para fins de teste de formatação. O objetivo deste texto é fornecer informações
-      básicas sobre um tópico genérico e preencher espaço na página. Ele pode ser personalizado ou substituído por
-      conteúdo real relevante para o usuário ou o propósito do documento.</p>
+    <ng-content></ng-content>
   </div>
 
 
   <div class="button-group">
     <!-- component.html -->
     <button class="square-button" (click)="increaseFontSize()">
-      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/pngwing.com.png" class="round-logo"
+      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+TextSizeIncrease.png" class="round-logo"
         alt="Logo">
     </button>
     <button class="square-button" (click)="decreaseFontSize()">
-      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/pngwing.com.png" class="round-logo"
+      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+TextSizeDecrease.png" class="round-logo"
         alt="Logo">
     </button>
     <button class="square-button" (click)="increaseLineHeight()">
-      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/pngwing.com.png" class="round-logo"
+      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+LineSpacing.png" class="round-logo"
         alt="Logo">
     </button>
     <button class="square-button" (click)="changeContrast()">
-      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/pngwing.com.png" class="round-logo"
+      <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+Contrast.png" class="round-logo"
         alt="Logo">
     </button>
 

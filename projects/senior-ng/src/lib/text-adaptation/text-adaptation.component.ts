@@ -1,7 +1,7 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-text-adaptation',
+  selector: 'sng-text-adaptation',
   templateUrl: './text-adaptation.component.html',
   styleUrls: ['./text-adaptation.component.scss'],
 })
