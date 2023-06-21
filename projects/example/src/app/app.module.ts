@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TextAdaptationModule } from 'projects/senior-ng/src/lib/text-adaptation/text-adaptation.module';
+import { HighlightLinkModule } from 'projects/senior-ng/src/lib/highlight-link/highlight-link.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { TextAdaptationModule } from 'projects/senior-ng/src/lib/text-adaptation
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TextAdaptationModule
+    TextAdaptationModule,
+    HighlightLinkModule
   ],
   providers: [],
   bootstrap: [AppComponent]
