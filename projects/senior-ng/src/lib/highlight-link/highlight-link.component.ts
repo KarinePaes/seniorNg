@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sng-highlight-link',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./highlight-link.component.scss']
 })
 export class HighlightLinkComponent implements OnInit {
+
+  @Input() link: string = '';
+  @Input() textLink: string = '';
+  @Input() textTooltip: string = '';
+  @Input() ariaLabel: string = '';
 
   constructor() { }
 
