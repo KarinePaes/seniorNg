@@ -1,0 +1,26 @@
+button {
+    width: 40px;
+    height: 40px;
+    background: #0074AB;
+    border-radius: 3px;
+    cursor:default;
+ }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.increase {
+    display: flex;
+    margin-left: -3px;
+}
+
+.decrease {
+    display: flex;
+    margin-left: -3px;
+}
+
+.decreaseButton{
+    margin-top:30px;
+}
