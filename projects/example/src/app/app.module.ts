@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TextAdaptationModule } from 'projects/senior-ng/src/lib/text-adaptation/text-adaptation.module';
 import { HighlightLinkModule } from 'projects/senior-ng/src/lib/highlight-link/highlight-link.module';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HighlightLinkModule } from 'projects/senior-ng/src/lib/highlight-link/h
     BrowserModule,
     AppRoutingModule,
     TextAdaptationModule,
-    HighlightLinkModule
+    HighlightLinkModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
