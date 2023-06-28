@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'sng-text-adaptation',
@@ -7,13 +7,11 @@ import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core'
 })
 export class TextAdaptationComponent {
   @ViewChild('content') content: TemplateRef<any> | undefined;
-
-  @Input() fontSize: number = 14
-  @Input() lineHeight: number = 20;
-  @Input() color: string = 'black';
-
-  public contrast: number = 1;
-  private contrastActive = false;
+  fontSize = 14;
+  lineHeight = 20; // Inicializando lineHeight com um valor padrão.
+  contrast = 1; // Inicializando o contraste com o valor padrão.
+  color = 'black';
+  contrastActive = false;
 
   increaseFontSize() {
     this.fontSize++;

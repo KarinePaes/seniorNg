@@ -1,3 +1,11 @@
+<!-- <button (click)="increaseFontSize()">Aumentar fonte</button>
+<ng-container [ngTemplateOutlet]="content" [ngTemplateOutletContext]="{ $implicit: fontSize }"></ng-container>
+<ng-template #content let-fontSize>
+  <div [style.font-size.px]="fontSize">
+    <p>Seu texto aqui</p>
+  </div>
+</ng-template> -->
+
 <div>
   <div [style.font-size.px]="fontSize" [style.line-height.px]="lineHeight"  [style.color]="color" [style.backdrop-filter]="'contrast(' + contrast + ')'" class="teste">
     <ng-content></ng-content>
