@@ -1,26 +1,21 @@
 <div class="align-button-change" *ngIf="dropdowToList == 'dropdown'">
-  <form>
-    <mat-form-field>
-      <mat-label>Favorite food</mat-label>
-      <mat-select [(ngModel)]="selectedItem" name="food">
-        <mat-option *ngFor="let item of itensList" [value]="item">
-          {{item}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-  </form>
+  <mat-form-field>
+    <mat-label>{{ labelInput }}</mat-label>
+    <mat-select [(ngModel)]="selectedItem" name="food">
+      <mat-option *ngFor="let item of itensList" [value]="item">
+        {{item}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
   <button class="button-change" mat-stroked-button color="primary" (click)="changeToList()">Lista</button>
 </div>
 
 
 <div class="align-button-change" *ngIf="dropdowToList == 'list'">
-  <mat-radio-group
-  aria-labelledby="radio-group-label"
-  class="radio-group"
-  [(ngModel)]="selectedItem">
-  <mat-radio-button class="radio-button" *ngFor="let item of itensList" [value]="item">
-    {{item}}
-  </mat-radio-button>
-</mat-radio-group>
-<button class="button-change" mat-stroked-button color="primary" (click)="changeToDropdown()">Dropdown</button>
+  <mat-radio-group aria-labelledby="radio-group-label" class="radio-group" [(ngModel)]="selectedItem">
+    <mat-radio-button class="radio-button" *ngFor="let item of itensList" [value]="item">
+      {{item}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <button class="button-change" mat-stroked-button color="primary" (click)="changeToDropdown()">Dropdown</button>
 </div>
