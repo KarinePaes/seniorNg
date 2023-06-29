@@ -12,6 +12,8 @@ import { TextAdaptationModule } from 'projects/senior-ng/src/lib/text-adaptation
 import { HighlightLinkModule } from 'projects/senior-ng/src/lib/highlight-link/highlight-link.module';
 import { DropdownToListModule } from 'projects/senior-ng/src/lib/dropdownToList/dropdownToList.module';
 import { MouseIncreaseModule } from 'projects/senior-ng/src/lib/mouse-increase/mouse-increase.module';
+import { ActionWarningModule } from 'projects/senior-ng/src/lib/action-warning/action-warning.module';
+import { HintModule } from 'projects/senior-ng/src/lib/hint/hint.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MouseIncreaseModule } from 'projects/senior-ng/src/lib/mouse-increase/m
     HighlightLinkModule,
     DropdownToListModule,
     MouseIncreaseModule,
-    MatCardModule
+    MatCardModule,
+    ActionWarningModule,
+    HintModule
   ],
   providers: [],
   bootstrap: [AppComponent]
