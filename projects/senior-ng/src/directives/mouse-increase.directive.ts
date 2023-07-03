@@ -21,8 +21,6 @@ export class MouseIncreaseDirective {
 
   private increaseCursor() {
     this.cursorSize++;
-    //console.log(this.cursorSize);
-
     switch (this.cursorSize) {
       case 0:
         this.cursorStyle = 'default';
