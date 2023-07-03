@@ -7,7 +7,6 @@ export class TooltipControlService {
   hideTooltip = new Subject<string>();
 
   triggerTooltip(tooltipId: string) {
-    console.log('Service triggerTooltip: ', tooltipId);
     this.showTooltip.next(tooltipId);
   }
 
