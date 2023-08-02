@@ -14,17 +14,17 @@
                 <mat-card-content>
                     <div class="container-examples">
                         <div class="hint">
-                            <sng-hint></sng-hint>
+                            <sng-hint  [idHint]="'tooltip1'"></sng-hint>
                         </div>
                         <div class="buttons">
-                            <input 
+                            <input
                                     matTooltip="Para fazer uma pesquisa, digite aqui o termo que você deseja encontrar"
                                     appControlledTooltip="tooltip1"
                                     placeholder="Digite aqui"
                                     style="margin-right: 20px;"
                                     type="text"size=50>
-    
-                
+
+
                             <button mat-raised-button
                                     color="secondary"
                                     matTooltip="Clique aqui para concluir sua pesquisa"
