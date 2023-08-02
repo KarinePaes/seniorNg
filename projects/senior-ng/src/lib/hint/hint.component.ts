@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TooltipControlService } from '../../services/TooltipControlService.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { TooltipControlService } from '../../services/TooltipControlService.serv
 export class HintComponent {
   constructor(private tooltipControlService: TooltipControlService) {}
 
+  @Input() idHint: string = '';
   showTooltip(id: string) {
     this.tooltipControlService.triggerTooltip(id);
   }
