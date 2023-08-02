@@ -1,0 +1,58 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Verdana", sans-serif;
+}
+
+.container-cards {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-header {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    max-width: 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container-icon {
+    margin-right: 5px;
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.title {
+    max-width: 100px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Verdana", sans-serif;
+}
+
+.version {
+    max-width: 33px;
+    margin-top: 1px;
+    color: rgba(137, 148, 163, 1);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Verdana", sans-serif;
+}

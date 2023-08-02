@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="container-header">
+        <a routerLink="/home">
+            <div class="container-icon"> ← </div>
+        </a>
+        <div class="container-title">
+            <div class="title">SeniorNg</div>
+            <div class="version">v1.0.0</div>
+        </div>
+      </div>
+    <div class="container-cards">
+        <div style="margin-bottom: 50px;">
+            <mat-card>
+                <mat-card-content>
+                    <div class="container-examples">
+                        <div class="hint">
+                            <sng-hint></sng-hint>
+                        </div>
+                        <div class="buttons">
+                            <input 
+                                    matTooltip="Para fazer uma pesquisa, digite aqui o termo que você deseja encontrar"
+                                    appControlledTooltip="tooltip1"
+                                    placeholder="Digite aqui"
+                                    style="margin-right: 20px;"
+                                    type="text"size=50>
+    
+                
+                            <button mat-raised-button
+                                    color="secondary"
+                                    matTooltip="Clique aqui para concluir sua pesquisa"
+                                    appControlledTooltip="tooltip1">
+                            Pesquisar
+                            </button>
+                        </div>
+                    </div>
+
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

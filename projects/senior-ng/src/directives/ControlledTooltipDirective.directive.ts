@@ -18,6 +18,7 @@ export class ControlledTooltipDirective implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
+    this.tooltip.disabled = true;
     this.showSubscription = this.tooltipControlService.showTooltip.subscribe(id => {
       if (id === this.tooltipId) {
         this.tooltip.disabled = false;
