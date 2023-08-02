@@ -1,9 +1,11 @@
 <div class="container">
-    <button (click)="increaseCursor()">
-        <img class="increase" src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/1+MouseControlerIncrease.png"> 
-    </button>
-    
-    <button (click)="decreaseCursor()" class="decreaseButton">
-        <img class="decrease" src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/1+MouseControlerDecrease.png"> 
-    </button>
+  <button (click)="increaseCursor()" aria-label="Aumentar cursor">
+    <img class="increase" src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/1+MouseControlerIncrease.png"
+      alt="Ícone para aumentar cursor">
+  </button>
+
+  <button (click)="decreaseCursor()" class="decreaseButton" aria-label="Diminuir cursor">
+    <img class="decrease" src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/1+MouseControlerDecrease.png"
+      alt="Ícone para diminuir cursor">
+  </button>
 </div>

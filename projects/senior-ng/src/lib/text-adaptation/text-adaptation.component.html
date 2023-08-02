@@ -1,35 +1,24 @@
-<!-- <button (click)="increaseFontSize()">Aumentar fonte</button>
-<ng-container [ngTemplateOutlet]="content" [ngTemplateOutletContext]="{ $implicit: fontSize }"></ng-container>
-<ng-template #content let-fontSize>
-  <div [style.font-size.px]="fontSize">
-    <p>Seu texto aqui</p>
-  </div>
-</ng-template> -->
-
 <div>
-  <div [style.font-size.px]="fontSize" [style.line-height.px]="lineHeight"  [style.color]="color" [style.backdrop-filter]="'contrast(' + contrast + ')'" class="teste">
+  <div [style.font-size.px]="fontSize" [style.line-height.px]="lineHeight" [style.color]="color" [style.backdrop-filter]="'contrast(' + contrast + ')'" class="teste">
     <ng-content></ng-content>
   </div>
 
-
   <div class="button-group">
-    <!-- component.html -->
-    <button class="square-button" (click)="increaseFontSize()">
+    <button class="square-button" (click)="increaseFontSize()" aria-label="Aumentar tamanho da fonte">
       <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+TextSizeIncrease.png" class="round-logo"
-        alt="Logo">
+        alt="Ícone para aumentar tamanho da fonte">
     </button>
-    <button class="square-button" (click)="decreaseFontSize()">
+    <button class="square-button" (click)="decreaseFontSize()" aria-label="Diminuir tamanho da fonte">
       <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+TextSizeDecrease.png" class="round-logo"
-        alt="Logo">
+        alt="Ícone para diminuir tamanho da fonte">
     </button>
-    <button class="square-button" (click)="increaseLineHeight()">
+    <button class="square-button" (click)="increaseLineHeight()" aria-label="Aumentar espaçamento entre linhas">
       <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+LineSpacing.png" class="round-logo"
-        alt="Logo">
+        alt="Ícone para aumentar espaçamento entre linhas">
     </button>
-    <button class="square-button" (click)="changeContrast()">
+    <button class="square-button" (click)="changeContrast()" aria-label="Alterar contraste">
       <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+Contrast.png" class="round-logo"
-        alt="Logo">
+        alt="Ícone para alterar contraste">
     </button>
-
   </div>
 </div>
