@@ -1,4 +1,4 @@
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, TemplateRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'sng-text-adaptation',
@@ -6,23 +6,46 @@ import { Component, TemplateRef, ViewChild } from '@angular/core';
   styleUrls: ['./text-adaptation.component.scss'],
 })
 export class TextAdaptationComponent {
-  @ViewChild('content') content: TemplateRef<any> | undefined;
-  fontSize = 14;
-  lineHeight = 20; // Inicializando lineHeight com um valor padrão.
-  contrast = 1; // Inicializando o contraste com o valor padrão.
+  fontSize: number = 14;
+  lineHeight: number = 16;
+  contrast: number = 1;
   color = 'black';
   contrastActive = false;
 
+  @ViewChild('divContent', { static: false }) divContentRef!: ElementRef;
+
+
+  @Input() enableFontSize: boolean = true;
+  @Input() enableLineHeight: boolean = true;
+  @Input() enableChangeContrast: boolean = true;
+
+
+  @Input() minFontSize: number = 12;
+  @Input() maxFontSize: number = 40;
+
+
   increaseFontSize() {
-    this.fontSize++;
+    this.fontSize = this.fontSize + 5;
+
+    if(this.fontSize > this.maxFontSize) {
+      this.fontSize = this.maxFontSize;
+    }
   }
 
   decreaseFontSize() {
-    this.fontSize--;
+    this.fontSize = this.fontSize - 5;
+
+    if(this.fontSize < this.minFontSize) {
+      this.fontSize = this.minFontSize;
+    }
   }
 
   increaseLineHeight() {
-    this.lineHeight += 2; // Incrementa o espaçamento entre as linhas
+    this.lineHeight += 4;
+
+    if(this.lineHeight > 40) {
+      this.lineHeight = 16;
+    }
   }
 
   changeContrast() {
