@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'sng-dropdown-to-list',
   templateUrl: './dropdownToList.component.html',
   styleUrls: ['./dropdownToList.component.scss']
 })
-export class DropdownToListComponent implements OnInit {
+export class DropdownToListComponent {
 
 
   @Input() itensList: string[] = [];
@@ -14,10 +14,6 @@ export class DropdownToListComponent implements OnInit {
   dropdowToList: string = 'dropdown'
 
   constructor() { }
-
-  ngOnInit() {
-    this.itensList = ['Winter', 'Spring', 'Summer', 'Autumn'];
-  }
 
   changeToList() {
     this.dropdowToList = 'list'
