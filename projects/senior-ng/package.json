@@ -1,9 +1,13 @@
 {
   "name": "senior-ng",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0"
+    "@angular/core": "^15.2.0",
+    "@angular/material": "^15.2.9"
+  },
+  "scripts": {
+    "postinstall": "ng add @angular/material@15.2"
   },
   "dependencies": {
     "tslib": "^2.3.0"
