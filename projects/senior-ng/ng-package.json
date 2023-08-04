@@ -3,5 +3,12 @@
   "dest": "../../dist/senior-ng",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": [
+    {
+      "glob": "**/*",
+      "input": "/schematics",
+      "output": "/schematics"
+    }
+  ]
 }

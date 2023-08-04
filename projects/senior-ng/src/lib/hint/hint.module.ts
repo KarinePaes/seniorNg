@@ -8,6 +8,6 @@ import { DirectivesModule } from '../../directives/directives.module';
 @NgModule({
   imports: [CommonModule, MatButtonModule, MatTooltipModule, DirectivesModule],
   declarations: [	HintComponent],
-  exports: [HintComponent],
+  exports: [HintComponent, MatButtonModule, MatTooltipModule, DirectivesModule],
 })
 export class HintModule {}

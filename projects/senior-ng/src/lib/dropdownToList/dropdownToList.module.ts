@@ -28,6 +28,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   declarations: [DropdownToListComponent],
-  exports: [DropdownToListComponent],
+  exports: [
+    DropdownToListComponent,
+    MatButtonModule,
+    MatMenuModule,
+    MatRadioModule,
+    FormsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+  ],
 })
 export class DropdownToListModule { }

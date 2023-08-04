@@ -1,0 +1,9 @@
+{
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "add-material": {
+      "description": "Adiciona o Angular Material",
+      "factory": "./add-material/index#default"
+    }
+  }
+}

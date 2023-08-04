@@ -14,9 +14,6 @@ import { DropdownToListModule } from 'projects/senior-ng/src/lib/dropdownToList/
 import { MouseIncreaseModule } from 'projects/senior-ng/src/lib/mouse-increase/mouse-increase.module';
 import { ActionWarningModule } from 'projects/senior-ng/src/lib/action-warning/action-warning.module';
 import { HintModule } from 'projects/senior-ng/src/lib/hint/hint.module';
-import { DirectivesModule } from 'projects/senior-ng/src/directives/directives.module';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatButtonModule } from '@angular/material/button';
 import { ActionWarningComponent } from './action-warning/action-warning.component';
 import { HomeComponent } from './home/home.component';
 import { DropdownListComponent } from './dropdown-list/dropdown-list.component';
@@ -48,9 +45,6 @@ import { TextAdaptationComponent } from './text-adaptation/text-adaptation.compo
     MatCardModule,
     ActionWarningModule,
     HintModule,
-    DirectivesModule,
-    MatButtonModule,
-    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
