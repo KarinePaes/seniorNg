@@ -1,0 +1,60 @@
+.modal-content {
+    padding: 20px;
+    text-align: center;
+    font-family: verdana, sans-serif;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .buttonPrimary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 1);
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgba(0, 116, 171, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1%;
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+  }
+
+  .buttonSecondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    background-color: rgba(138, 153, 168, 0.20000000298023224);
+    color: rgba(0, 0, 0, 0.8999999761581421);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1%;
+    text-align: right;
+    font-family: "Verdana", sans-serif;
+  }

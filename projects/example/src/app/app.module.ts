@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SeniorNgModule } from 'projects/senior-ng/src/public-api';
+import { DirectivesModule, SeniorNgModule } from 'projects/senior-ng/src/public-api';
 
 /* Imports Materials */
 import {MatCardModule} from '@angular/material/card';
@@ -11,8 +11,9 @@ import {MatCardModule} from '@angular/material/card';
 import { TextAdaptationModule } from 'projects/senior-ng/src/lib/text-adaptation/text-adaptation.module';
 import { HighlightLinkModule } from 'projects/senior-ng/src/lib/highlight-link/highlight-link.module';
 import { DropdownToListModule } from 'projects/senior-ng/src/lib/dropdownToList/dropdownToList.module';
-import { MouseIncreaseModule } from 'projects/senior-ng/src/lib/mouse-increase/mouse-increase.module';
+import { MouseControlerModule } from 'projects/senior-ng/src/lib/mouse-controler/mouse-controler.module';
 import { ActionWarningModule } from 'projects/senior-ng/src/lib/action-warning/action-warning.module';
+import { IncreaseSensibilityModule } from 'projects/senior-ng/src/lib/increase-sensibility/increase-sensibitily.module'
 import { HintModule } from 'projects/senior-ng/src/lib/hint/hint.module';
 import { ActionWarningComponent } from './action-warning/action-warning.component';
 import { HomeComponent } from './home/home.component';
@@ -41,10 +42,12 @@ import { TextAdaptationComponent } from './text-adaptation/text-adaptation.compo
     TextAdaptationModule,
     HighlightLinkModule,
     DropdownToListModule,
-    MouseIncreaseModule,
+    MouseControlerModule,
     MatCardModule,
     ActionWarningModule,
     HintModule,
+    IncreaseSensibilityModule,
+    DirectivesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

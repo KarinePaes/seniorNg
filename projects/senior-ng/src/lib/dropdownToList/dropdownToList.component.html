@@ -7,7 +7,7 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
-  <button class="button-change" mat-stroked-button color="primary" (click)="changeToList()" aria-label="Mudar para lista">Lista</button>
+  <button class="buttonPrimary" (click)="changeToList()" aria-label="Mudar para lista">Lista</button>
 </div>
 
 <div class="align-button-change" *ngIf="dropdowToList == 'list'">
@@ -16,5 +16,5 @@
       {{item}}
     </mat-radio-button>
   </mat-radio-group>
-  <button class="button-change" mat-stroked-button color="primary" (click)="changeToDropdown()" aria-label="Mudar para dropdown">Dropdown</button>
+  <button class="buttonPrimary" (click)="changeToDropdown()" aria-label="Mudar para dropdown">Dropdown</button>
 </div>

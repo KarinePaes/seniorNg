@@ -9,13 +9,26 @@
         </div>
       </div>
     <div class="container-cards">
-        <div style="margin-bottom: 50px;">
-            <mat-card>
-                <mat-card-header> <h4> Dropdown to List </h4> </mat-card-header>
-                <mat-card-content>
-                    <sng-dropdown-to-list [itensList] = "items"  [labelInput]="input"></sng-dropdown-to-list>
-                </mat-card-content>
-            </mat-card>
+
+        <div class="component-title">
+            <picture>
+                <source
+                    srcset="../assets/icons/IconDropdownList.png"
+                    type="image/png"/>
+                <img
+                    loading="lazy"
+                    src="../assets/icons/IconDropdownList.png"
+                    srcset="../assets/icons/IconDropdownList.png"
+                    class="image"/>
+            </picture>
+            Dropdown to List
         </div>
+        <div class="component-text">
+            O componente "Dropdown to List" é uma solução que transforma um menu suspenso em uma lista estática com radio buttons para seleção, melhorando a acessibilidade para pessoas com dificuldades motoras. O usuário pode escolher entre o formato de dropdown ou lista, dependendo da preferência. O programador pode definir os itens disponíveis, o placeholder do campo de input e a escrita do botão de alternância entre os componentes, que por padrão exibe "Lista" e "Dropdown".
+        </div>
+        <div class="component-example">
+            <sng-dropdown-to-list [itensList] = "items"  [labelInput]="input"></sng-dropdown-to-list>
+        </div>
+        
     </div>
 </div>

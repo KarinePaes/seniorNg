@@ -1,35 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+
 
 @Component({
-  selector: 'sng-action-warning',
+  selector: 'lib-modal-content',
   templateUrl: './action-warning.component.html',
-  styleUrls: ['./action-warning.component.scss'],
+  styleUrls: ['./action-warning.component.scss']
 })
-export class ActionWarningComponent implements OnInit {
-  constructor(public dialog: MatDialog) {}
+export class ActionWarningComponent {
 
-  openDialog() {
-    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+  modalTitle: string;
+  modalContent: string;
+  buttonPrimary: string;
+  buttonSecondary: string;
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
-    });
-
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data: any,
+    private dialogRef: MatDialogRef<ActionWarningComponent>
+    ) { 
+    this.modalTitle = data.title || 'title';
+    this.modalContent = data.content || 'Você está executando uma ação importante, tem certeza que deseja prosseguir?';
+    this.buttonPrimary = data.buttonPrimary || 'Confirmar';
+    this.buttonSecondary = data.buttonSecondary || 'Cancelar';
   }
 
-  ngOnInit() {}
-}
+  onButtonPrimaryClick() {
+    this.dialogRef.close(2); // Fechar o modal e retornar 1 para o componente que o chamou
+  }
 
-@Component({
-  selector: 'dialog-content-example-dialog',
-  template: ` <h2 mat-dialog-title>Título da Modal</h2>
-    <mat-dialog-content>Conteúdo da Modal</mat-dialog-content>
-    <mat-dialog-actions>
-      <button mat-button mat-dialog-close>Fechar</button>
-    </mat-dialog-actions>`,
-  standalone: true,
-  imports: [MatDialogModule, MatButtonModule],
-})
-export class DialogContentExampleDialog {}
+  onButtonSecondaryClick() {
+    this.dialogRef.close(1); // Fechar o modal e retornar 2 para o componente que o chamou
+  }
+}

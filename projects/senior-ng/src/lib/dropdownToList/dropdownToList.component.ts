@@ -9,7 +9,7 @@ export class DropdownToListComponent {
 
 
   @Input() itensList: string[] = [];
-  @Input() labelInput: string = '';
+  @Input() labelInput: string = 'Selecione';
   selectedItem: string = '';
   dropdowToList: string = 'dropdown'
 

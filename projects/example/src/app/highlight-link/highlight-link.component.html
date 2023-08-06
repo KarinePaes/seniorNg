@@ -9,18 +9,35 @@
         </div>
       </div>
     <div class="container-cards">
-        <div style="margin-bottom: 50px;">
-            <mat-card>
-                <mat-card-header> <h4> Highlight Link </h4> </mat-card-header>
-                <mat-card-content>
-                    Este é um exemplo de link: 
-                    <sng-highlight-link 
-                        link="https://www.google.com.br"
-                        textLink="www.google.com.br"
-                        textTooltip="Este link irá te direcionar ao buscador Google quando clicado">
-                    </sng-highlight-link>
-                </mat-card-content>
-            </mat-card>
+        <div class="component-title">
+            <picture>
+                <source
+                    srcset="../assets/icons/IconLink.png"
+                    type="image/png"/>
+                <img
+                    loading="lazy"
+                    src="../assets/icons/IconLink.png"
+                    srcset="../assets/icons/IconLink.png"
+                    class="image"/>
+            </picture>
+            Highlight Link
         </div>
+        <div class="component-text">
+            O componente "Highlight Link" foi desenvolvido para melhorar a usabilidade e acessibilidade dos links em páginas da web. Ao posicionar o mouse sobre um link, a cor de fundo é destacada e uma tooltip informativa é exibida, fornecendo uma descrição concisa do destino do link. Isso ajuda os usuários a identificar facilmente os links e compreender o contexto e propósito do link sem a necessidade de clicar. O programador pode personalizar o link de destino, a mensagem de aviso e a label para tornar a experiência mais clara e significativa, especialmente para usuários de leitores de tela.
+        </div>
+        <div class="component-example">
+            <p>
+                Um hiperlink é um elemento interativo comumente utilizado em páginas da web que permite aos usuários navegar de uma página para outra com apenas um clique. Esses links são representados geralmente por texto ou imagens destacadas e possuem uma cor ou estilo diferente para indicar sua interatividade. Ao clicar em um hiperlink, o usuário é direcionado para o destino associado, que pode ser uma página da web, um arquivo, uma imagem, ou até mesmo um endereço de e-mail.Um exemplo popular de hiperlink é o site do Google. Ao acessar a página
+                <sng-highlight-link 
+                link="https://www.google.com.br"
+                textLink="www.google.com.br"
+                textTooltip="Este link irá te direcionar ao buscador Google quando clicado">
+                </sng-highlight-link>
+                é possível notar que o nome "Google" é um hiperlink. Ao clicar nele, o usuário é redirecionado para a página inicial do mecanismo de busca, onde pode realizar pesquisas e encontrar informações na internet.
+            </p>
+            
+                
+        </div>
+        
     </div>
 </div>

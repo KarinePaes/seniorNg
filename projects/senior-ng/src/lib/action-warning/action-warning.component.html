@@ -1,7 +1,8 @@
-<!-- <button mat-button (click)="openDialog()">Open dialog</button> -->
-
-<!-- <button mat-raised-button
-        matTooltip="Tooltip controlado"
-        appControlledTooltip="tooltip1">
-  Componente com tooltip controlado
-</button> -->
+<div class="modal-content">
+    <h1>{{ modalTitle }} </h1>
+    <p>{{ modalContent }}</p>
+    <div class="button-container">
+      <button (click)="onButtonSecondaryClick()" class="buttonSecondary">{{ buttonSecondary }}</button>
+      <button (click)="onButtonPrimaryClick()" class="buttonPrimary">{{ buttonPrimary }}</button>
+    </div>
+</div>

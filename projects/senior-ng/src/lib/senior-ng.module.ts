@@ -5,7 +5,7 @@ import { HighlightLinkModule } from './highlight-link/highlight-link.module';
 import { ActionWarningModule } from './action-warning/action-warning.module';
 import { DropdownToListModule } from './dropdownToList/dropdownToList.module';
 import { HintModule } from './hint/hint.module';
-import { MouseIncreaseModule } from './mouse-increase/mouse-increase.module';
+import { MouseControlerModule } from './mouse-controler/mouse-controler.module';
 import { DirectivesModule } from '../directives/directives.module';
 
 
@@ -17,7 +17,7 @@ import { DirectivesModule } from '../directives/directives.module';
     TextAdaptationModule,
     HighlightLinkModule,
     DropdownToListModule,
-    MouseIncreaseModule,
+    MouseControlerModule,
     ActionWarningModule,
     HintModule,
     DirectivesModule
@@ -26,7 +26,7 @@ import { DirectivesModule } from '../directives/directives.module';
     TextAdaptationModule,
     HighlightLinkModule,
     DropdownToListModule,
-    MouseIncreaseModule,
+    MouseControlerModule,
     ActionWarningModule,
     HintModule,
     DirectivesModule

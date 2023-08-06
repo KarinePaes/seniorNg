@@ -1,19 +1,38 @@
 .radio-group {
   display: flex;
   flex-direction: column;
-  // margin: 15px 0;
   align-items: flex-start;
+  width: 212px;
 }
 
-.radio-button {
-  // margin: 5px;
+.mat-select {
+  font-family: 'verdana', sans-serif; /* Substitua 'Arial' pela fonte desejada */
 }
-
 .align-button-change {
+  align-items: flex-start;
   display: flex;
+  justify-items: center;
+  
+}
 
-  .button-change {
-    margin-left: 1rem;
-  }
-
+.buttonPrimary {
+  margin-left: 20px;
+  min-width: 100px;
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 1);
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgba(0, 116, 171, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1%;
+  text-align: center;
+  font-family: "Verdana", sans-serif;
 }

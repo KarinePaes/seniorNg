@@ -1,11 +1,11 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
-  selector: 'sng-mouse-increase',
-  templateUrl: './mouse-increase.component.html',
-  styleUrls: ['./mouse-increase.component.scss']
+  selector: 'sng-mouse-controler',
+  templateUrl: './mouse-controler.component.html',
+  styleUrls: ['./mouse-controler.component.scss']
 })
-export class MouseIncreaseComponent {
+export class MouseControlerComponent {
 
     private cursorStyle: string = 'default';
     private cursorSize: number = 0;

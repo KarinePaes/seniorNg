@@ -9,33 +9,41 @@
         </div>
       </div>
     <div class="container-cards">
-        <div style="margin-bottom: 50px;">
-            <mat-card>
-                <mat-card-content>
-                    <div class="container-examples">
-                        <div class="hint">
-                            <sng-hint  [idHint]="'tooltip1'"></sng-hint>
-                        </div>
-                        <div class="buttons">
-                            <input
-                                    matTooltip="Para fazer uma pesquisa, digite aqui o termo que você deseja encontrar"
-                                    appControlledTooltip="tooltip1"
-                                    placeholder="Digite aqui"
-                                    style="margin-right: 20px;"
-                                    type="text"size=50>
-
-
-                            <button mat-raised-button
-                                    color="secondary"
-                                    matTooltip="Clique aqui para concluir sua pesquisa"
-                                    appControlledTooltip="tooltip1">
-                            Pesquisar
-                            </button>
-                        </div>
-                    </div>
-
-                </mat-card-content>
-            </mat-card>
+        <div class="component-title">
+            <picture>
+                <source
+                    srcset="../assets/icons/IconHint.png"
+                    type="image/png"/>
+                <img
+                    loading="lazy"
+                    src="../assets/icons/IconHint.png"
+                    srcset="../assets/icons/IconHint.png"
+                    class="image"/>
+            </picture>
+            Hint
+        </div>
+        <div class="component-text">
+            O componente "Hint" visa melhorar a acessibilidade para usuários não familiarizados com a navegação na web. Ao clicar no botão de dica, tooltips são ativadas para fornecer informações contextuais e descritivas sobre os elementos interativos do site, como botões e campos de formulário. Isso ajuda os usuários a compreender rapidamente a funcionalidade de cada componente, facilitando a navegação e interação. A abordagem é especialmente útil para pessoas com deficiências visuais ou inexperientes na interface, tornando a informação e funcionalidades mais acessíveis. O programador pode personalizar quais componentes recebem as dicas, a mensagem exibida e o posicionamento do botão flutuante na tela.        </div>
+        <div class="component-example">
+            <div class="hint">
+                <sng-hint  [idHint]="'tooltip1'"></sng-hint>
+            </div>
+            <div class="buttons">
+                <input
+                        matTooltip="Para fazer uma pesquisa, digite aqui o termo que você deseja encontrar"
+                        appControlledTooltip="tooltip1"
+                        placeholder="Digite aqui"
+                        style="margin-right: 20px;"
+                        type="text"size=50>
+            
+            
+                <button class="button"
+                        matTooltip="Clique aqui para concluir sua pesquisa"
+                        appControlledTooltip="tooltip1">
+                Pesquisar
+                </button>
+            </div>
         </div>
     </div>
 </div>
+

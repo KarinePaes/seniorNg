@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MouseIncreaseComponent } from './mouse-increase.component';
+import { MouseControlerComponent } from './mouse-controler.component';
 
-describe('MouseIncreaseComponent', () => {
-  let component: MouseIncreaseComponent;
-  let fixture: ComponentFixture<MouseIncreaseComponent>;
+describe('MouseControleComponent', () => {
+  let component: MouseControlerComponent;
+  let fixture: ComponentFixture<MouseControlerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MouseIncreaseComponent ]
+      declarations: [ MouseControlerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MouseIncreaseComponent);
+    fixture = TestBed.createComponent(MouseControlerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
