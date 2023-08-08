@@ -19,6 +19,7 @@
                     loading="lazy"
                     src="../assets/icons/IconActionWarning.png"
                     srcset="../assets/icons/IconActionWarning.png"
+                    alt="Ícone do componente Action Warning"
                     class="image"/>
             </picture>
             Action Warning
@@ -27,16 +28,16 @@
             O componente "Action Warning" é uma caixa de diálogo que notifica e confirma ações importantes ou irreversíveis antes de serem executadas. Ele permite personalização do título, mensagem, botões primário e secundário, possibilitando sua adaptação ao contexto específico da aplicação. É útil para evitar ações indesejadas, como excluir itens ou realizar ações críticas sem intenção.
         </div>
         <div class="component-example">
-            <button 
+            <button
                 class="button"
-                action-warning 
+                action-warning
                 [title]="'Você está saindo da sua conta'"
-                [content]="'Você está saindo da sua conta, confirmar ação?'" 
-                [buttonPrimary]="'Confirmar'" 
+                [content]="'Você está saindo da sua conta, confirmar ação?'"
+                [buttonPrimary]="'Confirmar'"
                 [buttonSecondary]="'Cancelar'">
                     Sair da conta
             </button>
         </div>
-        
+
     </div>
 </div>

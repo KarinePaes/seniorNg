@@ -47,7 +47,7 @@ a {
 .version {
     max-width: 33px;
     margin-top: 1px;
-    color: rgba(137, 148, 163, 1);
+    color: #575757;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0%;
@@ -97,7 +97,7 @@ a {
     background-color: rgba(237, 240, 244, 1);
     align-items: center;
     justify-content: center;
-    
+
   }
 
   .button {
