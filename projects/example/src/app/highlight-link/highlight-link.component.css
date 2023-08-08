@@ -46,7 +46,7 @@ a {
 .version {
     max-width: 33px;
     margin-top: 1px;
-    color: rgba(137, 148, 163, 1);
+    color: #575757;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0%;
@@ -86,7 +86,7 @@ a {
     margin-bottom: 40px;
     margin-top: 40px;
   }
-  
+
   .component-example {
     display: flex;
     max-width: 826px;
