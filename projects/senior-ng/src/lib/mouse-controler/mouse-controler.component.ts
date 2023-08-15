@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'sng-mouse-controler',
@@ -10,8 +10,7 @@ export class MouseControlerComponent {
     private cursorStyle: string = 'default';
     private cursorSize: number = 0;
 
-    constructor(private el: ElementRef, private renderer: Renderer2) {}
-
+  constructor(private renderer: Renderer2) {}
 
     myFunction(){
       console.log('teste')
@@ -21,35 +20,43 @@ export class MouseControlerComponent {
       if(this.cursorSize<4){
         this.cursorSize++;
       }
+      const elements = document.querySelectorAll('*');
       switch (this.cursorSize) {
         case 0:
           this.cursorStyle = 'default';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
+          elements.forEach(element => {
+            this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+          });
           break;
         case 1:
           this.cursorStyle =
-            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize1.png), auto';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
-
-          // Ainda precisa setar o cursor para todos os botões da tela
-
+            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize1.png), pointer';
+          elements.forEach(element => {
+            this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+          });
           break;
         case 2:
           this.cursorStyle =
-            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize2.png), auto';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
+            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize2.png), pointer';
+          elements.forEach(element => {
+            this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+          });
           break;
 
         case 3:
           this.cursorStyle =
-            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize3.png), auto';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
+          'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize3.png), pointer';
+        elements.forEach(element => {
+          this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+        });
           break;
 
         case 4:
           this.cursorStyle =
-            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize4.png), auto';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
+            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize4.png), pointer';
+          elements.forEach(element => {
+            this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+          });
           break;
       }
     }
@@ -58,32 +65,43 @@ export class MouseControlerComponent {
       if(this.cursorSize>0){
         this.cursorSize--;
       }
+      const elements = document.querySelectorAll('*');
       switch (this.cursorSize) {
         case 0:
           this.cursorStyle = 'default';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
+          elements.forEach(element => {
+            this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+          });
           break;
         case 1:
           this.cursorStyle =
-            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize1.png), auto';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
+            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize1.png), pointer';
+          elements.forEach(element => {
+            this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+          });
           break;
         case 2:
           this.cursorStyle =
-            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize2.png), auto';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
+            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize2.png), pointer';
+          elements.forEach(element => {
+            this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+          });
           break;
 
         case 3:
           this.cursorStyle =
-            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize3.png), auto';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
+            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize3.png), pointer';
+          elements.forEach(element => {
+            this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+          });
           break;
 
         case 4:
           this.cursorStyle =
-            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize4.png), auto';
-          this.renderer.setStyle(document.documentElement, 'cursor', this.cursorStyle);
+            'url(https://ng-senior.s3.sa-east-1.amazonaws.com/cursor/arrowSize4.png), pointer';
+          elements.forEach(element => {
+            this.renderer.setStyle(element, 'cursor',this.cursorStyle);
+          });
           break;
       }
 }

@@ -16,8 +16,8 @@ export class TextAdaptationComponent {
 
 
   @Input() enableFontSize: boolean = true;
-  @Input() enableLineHeight: boolean = true;
-  @Input() enableChangeContrast: boolean = true;
+  @Input() enableLineSpacing: boolean = true;
+  @Input() enableContrast: boolean = true;
 
 
   @Input() minFontSize: number = 12;

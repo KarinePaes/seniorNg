@@ -223,7 +223,7 @@ Agora você está pronto para começar a usar o componente **Mouse Controler** d
     <p>Este é um texto genérico destinado a preencher uma área de texto em um website ou documento. Ele pode ser usado como uma amostra de conteúdo ou para fins de teste de formatação. O objetivo deste texto é fornecer informações básicas sobre um tópico genérico e preencher espaço na página. Ele pode ser personalizado ou substituído por conteúdo real relevante para o usuário ou o propósito do documento.</p>
 </sng-text-adaptation>
 ```
-Você pode escolher quais tipos de adaptações serão permitidas no texto através das propriedades `enableFontSize`, `enableLineHeight` e `enableChangeContrast` que por padrão são marcadas como `true`.
+Você pode escolher quais tipos de adaptações serão permitidas no texto através das propriedades `enableFontSize`, `enableLineSpacing` e `enableContrast` que por padrão são marcadas como `true`.
 
 
 

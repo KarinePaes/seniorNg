@@ -12,11 +12,11 @@
       <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+TextSizeDecrease.png" class="round-logo"
         alt="Ícone para diminuir tamanho da fonte">
     </button>
-    <button *ngIf="enableLineHeight" class="square-button" (click)="increaseLineHeight()" aria-label="Aumentar espaçamento entre linhas">
+    <button *ngIf="enableLineSpacing" class="square-button" (click)="increaseLineHeight()" aria-label="Aumentar espaçamento entre linhas">
       <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+LineSpacing.png" class="round-logo"
         alt="Ícone para aumentar espaçamento entre linhas">
     </button>
-    <button *ngIf="enableChangeContrast" class="square-button" (click)="changeContrast()" aria-label="Alterar contraste">
+    <button *ngIf="enableContrast" class="square-button" (click)="changeContrast()" aria-label="Alterar contraste">
       <img src="https://ng-senior.s3.sa-east-1.amazonaws.com/icons/2+Contrast.png" class="round-logo"
         alt="Ícone para alterar contraste">
     </button>
