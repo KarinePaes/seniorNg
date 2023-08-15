@@ -3,8 +3,8 @@ import { ControlledTooltipDirective } from './ControlledTooltipDirective.directi
 import { ActionWarningDirective } from './ActionWarning.directive';
 
 @NgModule({
-  imports: [],
+  imports: [DirectivesModule],
   declarations: [ControlledTooltipDirective, ActionWarningDirective],
-  exports: [ControlledTooltipDirective, ActionWarningDirective]
+  exports: [ControlledTooltipDirective, ActionWarningDirective, DirectivesModule]
 })
 export class DirectivesModule { }
