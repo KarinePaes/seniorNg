@@ -4,11 +4,12 @@ import { ActionWarningComponent } from './action-warning.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { DirectivesModule } from '../../public-api';
 
 @NgModule({
-  imports: [CommonModule, MatDialogModule, MatButtonModule, MatTooltipModule],
+  imports: [CommonModule, MatDialogModule, MatButtonModule, MatTooltipModule, DirectivesModule],
   declarations: [ActionWarningComponent],
-  exports: [ActionWarningComponent],
+  exports: [ActionWarningComponent, DirectivesModule],
 })
 export class ActionWarningModule {
 
